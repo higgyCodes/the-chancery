@@ -2,6 +2,8 @@ backend:
   name: github
   branch: main
   repo: the-chancery/the-chancery
+  preview_context: my-provider/deployment
+publish_mode: editorial_workflow
 media_folder: public/img
 public_folder: img
 collections:
@@ -15,12 +17,3 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
-  - name: "projects"
-    label: "Projects"
-    folder: "content/projects"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "tester", name: "tester", widget: "datetime" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
