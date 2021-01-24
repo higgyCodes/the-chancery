@@ -1,0 +1,33 @@
+{
+  "name": "the-chancery",
+  "version": "0.1.0",
+  "description": "A archive of progressive digital and tech campaigns and activism",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/higgyCodes/the-chancery.git"
+  },
+  "keywords": [],
+  "author": "Patrick Higgins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/higgyCodes/the-chancery/issues"
+  },
+  "homepage": "https://github.com/higgyCodes/the-chancery#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "frontmatter-markdown-loader": "^3.6.2"
+  }
+}
