@@ -1,7 +1,7 @@
 backend:
   name: github
-  branch: master
-  repo: higgyCodes/the-chancery
+  branch: main
+  repo: the-chancery/the-chancery
 media_folder: public/img
 public_folder: img
 collections:
