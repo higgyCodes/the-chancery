@@ -17,11 +17,11 @@ collections:
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
   - name: "projects"
-    label: "Projects"	    label: "Projects"
-    folder: "content/projects"	    folder: "content/projects"
-    create: true	    create: true
-    fields:	    fields:
-      - { label: "Title", name: "title", widget: "string" }	      - { label: "Title", name: "title", widget: "string" }
-      - { label: "tester", name: "tester", widget: "datetime" }	      - { label: "tester", name: "tester", widget: "datetime" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }	      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }	      - { label: "Body", name: "body", widget: "markdown" }
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "tester", name: "tester", widget: "datetime" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
