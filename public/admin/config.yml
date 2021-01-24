@@ -1,8 +1,7 @@
 backend:
   name: github
-  branch: main
   repo: the-chancery/the-chancery
-  preview_context: my-provider/deployment
+  open_authoring: true
 publish_mode: editorial_workflow
 media_folder: public/img
 public_folder: img
