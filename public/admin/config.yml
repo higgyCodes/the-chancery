@@ -18,20 +18,29 @@ collections:
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "Projects"
-    name: projects
+    name: "projects"
+    folder: "projects"
+    create: true
     fields:
-      - { name: title, label: Title }
-        { name: date, label: Date, widget: date }
-        { name: body, label: Body, widget: markdown }
-  - label: "Organizations"
-    name: organizations
-    fields:
-      - { name: title, label: Title }
-        { name: date, label: Date, widget: date }
-        { name: body, label: Body, widget: markdown }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Tags"
-    name: tags
+    name: "tags"
+    folder: "tags"
+    create: true
     fields:
-      - { name: title, label: Title }
-        { name: date, label: Date, widget: date }
-        { name: body, label: Body, widget: markdown }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Organizations"
+    name: "organizations"
+    folder: "organizations"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
