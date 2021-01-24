@@ -17,3 +17,21 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Projects"
+    name: projects
+    fields:
+      - { name: title, label: Title }
+        { name: date, label: Date, widget: date }
+        { name: body, label: Body, widget: markdown }
+  - label: "Organizations"
+    name: organizations
+    fields:
+      - { name: title, label: Title }
+        { name: date, label: Date, widget: date }
+        { name: body, label: Body, widget: markdown }
+  - label: "Tags"
+    name: tags
+    fields:
+      - { name: title, label: Title }
+        { name: date, label: Date, widget: date }
+        { name: body, label: Body, widget: markdown }
