@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: the-chancery/the-chancery
+  repo: stockade-dev/stockade
   branch: main
   open_authoring: true
 publish_mode: editorial_workflow
@@ -26,21 +26,18 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Tags"
-    name: "tags"
-    folder: "tags"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Organizations"
-    name: "organizations"
+      - {
+          label: "Organization",
+          name: "organization",
+          widget: "relation",
+          collection: organization,
+          search_fields: ["name"],
+          value_field: "name",
+          display_fields: ["name"],
+        }
+  - label: "Organization"
+    name: "organization"
     folder: "organizations"
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Name", name: "name", widget: "string" }
