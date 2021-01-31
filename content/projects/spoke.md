@@ -6,4 +6,5 @@ organization: Warren For President
 tags:
   - Spoke
   - P2P
+  - Text
 ---
