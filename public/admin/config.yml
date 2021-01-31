@@ -53,7 +53,24 @@ collections:
     folder: "organizations"
     create: true
     fields:
-      - { label: "Name", name: "name", widget: "string" }
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Organization Type"
+        name: "type"
+        widget: "select"
+        options:
+          - { label: "Non-Profit", value: "nonprofit" }
+          - { label: "Campaign", value: "campaign" }
+          - { label: "Company", value: "company" }
+          - { label: "Collective", value: "collective" }
+      - label: "Funding"
+        name: "funding"
+        widget: "select"
+        options:
+          - { label: "Donations", value: "donations" }
+          - { label: "Venture Capital", value: "vc" }
+          - { label: "Bootstrapped", value: "bootstrapped" }
   - label: "Tag"
     name: "tag"
     folder: "tags"
