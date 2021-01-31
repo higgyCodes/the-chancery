@@ -17,7 +17,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "Project"
     name: "project"
-    folder: "projects"
+    folder: "content/projects"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -46,11 +46,12 @@ collections:
           search_fields: ["name"],
           value_field: "name",
           display_fields: ["name"],
-          multiple: True
+          multiple: True,
+          required: False
         }
   - label: "Organization"
     name: "organization"
-    folder: "organizations"
+    folder: "content/organizations"
     create: true
     fields:
       - label: "Name"
@@ -73,7 +74,7 @@ collections:
           - { label: "Bootstrapped", value: "bootstrapped" }
   - label: "Tag"
     name: "tag"
-    folder: "tags"
+    folder: "content/tags"
     create: true
     fields:
       - { label: "Name", name: "name", widget: "string" }
